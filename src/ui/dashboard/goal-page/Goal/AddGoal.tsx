@@ -249,7 +249,8 @@ function Step3({ goBack, handleStep3, aiStepsSuggestion }: Step3Props) {
       </div>
       <button
         onClick={() => handleStep3(steps)}
-        className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors duration-300 mt-4"
+        disabled={steps.length === 0}
+        className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors duration-300 mt-4 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-blue-500 disabled:hover:text-white"
       >
         Confirm
       </button>

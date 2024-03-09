@@ -1,3 +1,4 @@
+import GoalList from "@/ui/dashboard/GoalList";
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
@@ -36,7 +37,9 @@ export default function DashBoard() {
                 Add goal
               </Link>
             </li>
-            <li>List of goals</li>
+            <li>
+              <GoalList userId={"0000123"} />
+            </li>
             <li>Edit goal</li>
             <li>View goal</li>
           </ul>

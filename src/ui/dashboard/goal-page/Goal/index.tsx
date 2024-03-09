@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
 import AddGoal from "./AddGoal";
 
